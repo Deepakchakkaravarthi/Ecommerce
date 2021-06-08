@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>About us</title>
+  <title>sumit</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<center style="background-color: #B3E5FC;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+  <h1><u><center>About Us Page</center></u></h1>
+  <center>THE SHOP is India's leading e-commerce marketplace offering over 30 million products cross 70+ categories including Books, Media, Consumer Electronics and Lifestyle.</center><br>
+ <center>THE SHOP is known for its path-breaking services like Cash on Delivery.</center>
+  <h2><u><center> VISION</center></u></h2>
+<center>It outlines what the organization wants to be, or how it wants the world in which it operates to be.</center>
+    <br>
+<center>  It is a long-term view ad concentrate on the future.It can be emotive and is a source of inspiration</center>
+  <h2><u><center> MISSION</center></u></h2>
+ Define the fundamental purpose of an organization or an enterprise,succinctly describing why it exist and what it does to achive its vision
+  <h2><u><center>Value terms</center></u></h2>
+<p  ><b>We are responsible,accountable,respectful,effective,efficient public stewards. </p>
+<p  ><b>We encourage innovative to meet challenges.</b>We foster an environment of collaboration </p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+</html>
